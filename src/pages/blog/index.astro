@@ -1,14 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import Page from '../../layouts/Plain.astro';
+import Page from '../../layouts/Default.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.datePublished.valueOf() - a.data.datePublished.valueOf(),
 );
 ---
 
-<Page title="Blog" description="Official blog of the PVCC Coding Club.">
+<Page
+	title="Blog"
+	description="Official blog of the PVCC Coding Club."
+>
 	<section>
 		<ul>
 			{
