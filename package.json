@@ -1,9 +1,9 @@
 {
-  "name": "website",
-  "description": "Build a personal website, blog, or portfolio with Astro.",
+  "name": "@pvcccodingclub/website",
+  "description": "Official PVCC Coding Club website.",
   "private": true,
   "cloudflare": {
-    "label": "Astro Framework Starter",
+    "label": "PVCC Coding Club Website",
     "products": [
       "Workers"
     ],
